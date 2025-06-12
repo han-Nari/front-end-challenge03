@@ -229,12 +229,11 @@ td {
 }
 
 .tr-flex td {
-  padding-inline: 1em;
+  background-color: red;
 }
 
 .text-center {
   text-align: center;
-  padding-inline: 1em;
 }
 
 th {
@@ -347,11 +346,20 @@ td .btn:hover {
 
   td::before {
     content: attr(data-cell);
+    font-weight: var(--fw-600);
   }
 
   tr {
     display: grid;
-    place-content: center;
+    padding-inline: 2em;
+  }
+
+  .tr-flex {
+  }
+
+  .end {
+    flex: 1;
+    text-align: end;
   }
 
   .text-center {
