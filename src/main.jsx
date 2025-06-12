@@ -6,25 +6,19 @@ import Product from "./Product";
 import Orders from "./components/Orders";
 
 // Router
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 
 // Styles
 import "./css/global.css";
 import "./css/theme.css";
 
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <Product />,
-  },
-  {
-    path: "/orders",
-    element: <Orders />,
-  },
-]);
-
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <RouterProvider router={router}></RouterProvider>
+    <HashRouter>
+      <Routes>
+        <Route path="/" element={<Product />} />
+        <Route path="/orders" element={<Orders />} />
+      </Routes>
+    </HashRouter>
   </StrictMode>
 );
