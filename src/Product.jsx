@@ -252,11 +252,7 @@ export default function Product() {
                       (item) => item.id === items["Brownie"].id
                     )}
                   >
-                    <img
-                      className="cart"
-                      src="../src/assets/images/icon-add-to-cart.svg"
-                      alt="cart"
-                    />
+                    <img className="cart" src={iconCart} alt="cart" />
                     <span className="add">Add to Cart</span>
                   </button>
                 </div>
