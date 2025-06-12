@@ -27,7 +27,7 @@ export default function Orders() {
           <tbody>
             {orders.map((order, index) => (
               <tr key={index} className="border-bottom no">
-                <td data-cell="#" className="text-center">
+                <td data-cell="Order No. " className="text-center">
                   {index + 1}
                 </td>
                 <td>
@@ -45,7 +45,7 @@ export default function Orders() {
                 <td className="text-center td-items">${order.totalPrice}</td>
                 <td className="text-center">
                   <button className="btn" onClick={() => cancelOrder(index)}>
-                    Remove
+                    Cancel Order
                   </button>
                 </td>
               </tr>

@@ -234,6 +234,7 @@ td {
 
 .text-center {
   text-align: center;
+  padding-inline: 1em;
 }
 
 th {
@@ -346,5 +347,14 @@ td .btn:hover {
 
   td::before {
     content: attr(data-cell);
+  }
+
+  tr {
+    display: grid;
+    place-content: center;
+  }
+
+  .text-center {
+    text-align: end;
   }
 }
