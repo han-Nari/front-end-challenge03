@@ -261,6 +261,7 @@ td .btn:hover {
 
 .border-bottom {
   border-bottom: 1px solid lightgray;
+  text-align: center;
 }
 
 .border-bottom:hover {
