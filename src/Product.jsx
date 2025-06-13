@@ -26,6 +26,7 @@ import pannaCottaMobile from "./assets/images/image-panna-cotta-mobile.jpg";
 // Icon
 import iconCart from "../src/assets/images/icon-add-to-cart.svg";
 import check from "../src/assets/images/check.svg";
+import empty from "../src/assets/images/illustration-empty-cart.svg";
 export default function Product() {
   const {
     items,
@@ -322,10 +323,7 @@ export default function Product() {
                 </ul>
               ) : (
                 <div className="card-cart">
-                  <img
-                    src="../src/assets/images/illustration-empty-cart.svg"
-                    alt=""
-                  />
+                  <img src={empty} alt="" />
                   <p>Your added items will appear here</p>
                 </div>
               )}
